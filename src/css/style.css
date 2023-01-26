@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Manrope', sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  display: grid;
+  place-content: center;
+}
+
+#container {
+  width: 543px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  padding: 30px;
+}
+
+#id-txt {
+  color: hsl(150, 100%, 66%);
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+#advice {
+  color: hsl(193, 38%, 86%);
+  font-size: 25px;
+}
+
+#pattern {
+  margin-bottom: 20px;
+}
+
+#btn {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-image: url('../../images/icon-dice.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  bottom: -33px;
+  left: 44%;
+  transition: ease-in 300ms;
+}
+
+#btn:hover {
+  box-shadow: 0 0 40px 5px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 575px) {
+  #container {
+    width: 375px;
+  }
+}
